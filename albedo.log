@@ -1,0 +1,385 @@
+[2020-03-24 22:25:10,315] INFO [discord.client.login:399] logging in using static token
+[2020-03-24 22:25:11,896] INFO [discord.gateway.from_client:241] Created websocket connected to wss://gateway.discord.gg?encoding=json&v=6&compress=zlib-stream
+[2020-03-24 22:25:11,900] INFO [discord.gateway.identify:320] Shard ID None has sent the IDENTIFY payload.
+[2020-03-24 22:25:12,289] INFO [discord.gateway.received_message:410] Shard ID None has connected to Gateway: ["gateway-prd-main-8p8c",{"micros":51301,"calls":["discord-sessions-prd-1-43",{"micros":47328,"calls":["start_session",{"micros":44561,"calls":["api-prd-main-q35g",{"micros":41233,"calls":["get_user",{"micros":3240},"add_authorized_ip",{"micros":1699},"get_guilds",{"micros":9324},"coros_wait",{"micros":1}]}]},"guilds_connect",{"micros":7,"calls":[]},"presence_connect",{"micros":62,"calls":[]}]}]}] (Session ID: 7283c1fb1c42f2a07679245f8fc5d2f0).
+[2020-03-24 22:25:14,293] INFO [root.on_ready:114] Logged in as Schezwan Sauce
+[2020-03-24 22:26:02,324] INFO [root.on_command:83] BRANE GAAMEZ > Karthicccccccccccccccccccccccccc#0465 > sss ping
+[2020-03-24 22:26:12,146] INFO [root.on_command:83] BRANE GAAMEZ > Karthicccccccccccccccccccccccccc#0465 > sss lyrics humble kendrick
+[2020-03-24 22:26:14,960] ERROR [root.on_command_error:43] Ignoring exception in command lyrics:
+[2020-03-24 22:26:14,964] ERROR [root.on_command_error:44] 
+Traceback (most recent call last):
+  File "C:\Users\Kartik\AppData\Local\Programs\Python\Python38-32\lib\site-packages\discord\ext\commands\core.py", line 79, in wrapped
+    ret = await coro(*args, **kwargs)
+  File "C:\Users\Kartik\Desktop\Albedo\sexybot-root\cogs\music.py", line 377, in lyrics
+    txt += f"**{i+1}**. {get_song(query, i).title}\n"
+  File "C:\Users\Kartik\Desktop\Albedo\sexybot-root\cogs\music.py", line 30, in get_song
+    str(response['response']['hits'][item]['result']['url'], str(response['response']['hits'][item]['result']['song_art_image_url'])))
+TypeError: decoding str is not supported
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Kartik\AppData\Local\Programs\Python\Python38-32\lib\site-packages\discord\ext\commands\bot.py", line 863, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\Kartik\AppData\Local\Programs\Python\Python38-32\lib\site-packages\discord\ext\commands\core.py", line 728, in invoke
+    await injected(*ctx.args, **ctx.kwargs)
+  File "C:\Users\Kartik\AppData\Local\Programs\Python\Python38-32\lib\site-packages\discord\ext\commands\core.py", line 88, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: TypeError: decoding str is not supported
+
+[2020-03-24 22:27:08,194] INFO [discord.client.run:591] Received signal to terminate bot and event loop.
+[2020-03-24 22:27:08,198] INFO [discord.client.run:594] Cleaning up tasks.
+[2020-03-24 22:27:08,198] INFO [discord.client._cancel_tasks:73] Cleaning up after 4 tasks.
+[2020-03-24 22:27:08,338] INFO [discord.client._cleanup_loop:96] Closing the event loop.
+[2020-03-24 22:27:14,247] INFO [discord.client.login:399] logging in using static token
+[2020-03-24 22:27:15,583] INFO [discord.gateway.from_client:241] Created websocket connected to wss://gateway.discord.gg?encoding=json&v=6&compress=zlib-stream
+[2020-03-24 22:27:15,589] INFO [discord.gateway.identify:320] Shard ID None has sent the IDENTIFY payload.
+[2020-03-24 22:27:15,979] INFO [discord.gateway.received_message:410] Shard ID None has connected to Gateway: ["gateway-prd-main-q6sb",{"micros":61153,"calls":["discord-sessions-prd-1-67",{"micros":58486,"calls":["start_session",{"micros":56355,"calls":["api-prd-main-28qx",{"micros":53575,"calls":["get_user",{"micros":3291},"add_authorized_ip",{"micros":8645},"get_guilds",{"micros":5700},"coros_wait",{"micros":2}]}]},"guilds_connect",{"micros":6,"calls":[]},"presence_connect",{"micros":539,"calls":[]}]}]}] (Session ID: afbbed58db36f031d426e811e05f5895).
+[2020-03-24 22:27:17,992] INFO [root.on_ready:114] Logged in as Schezwan Sauce
+[2020-03-24 22:27:25,722] INFO [root.on_command:83] BRANE GAAMEZ > Karthicccccccccccccccccccccccccc#0465 > sss lyrics kendrick humble
+[2020-03-24 22:27:41,492] ERROR [root.on_command_error:43] Ignoring exception in command lyrics:
+[2020-03-24 22:27:41,496] ERROR [root.on_command_error:44] 
+Traceback (most recent call last):
+  File "C:\Users\Kartik\AppData\Local\Programs\Python\Python38-32\lib\site-packages\discord\ext\commands\core.py", line 79, in wrapped
+    ret = await coro(*args, **kwargs)
+  File "C:\Users\Kartik\Desktop\Albedo\sexybot-root\cogs\music.py", line 395, in lyrics
+    if int(answer.content) <= max_ind and int(answer.content) > 0:
+ValueError: invalid literal for int() with base 10: "'2"
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Kartik\AppData\Local\Programs\Python\Python38-32\lib\site-packages\discord\ext\commands\bot.py", line 863, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\Kartik\AppData\Local\Programs\Python\Python38-32\lib\site-packages\discord\ext\commands\core.py", line 728, in invoke
+    await injected(*ctx.args, **ctx.kwargs)
+  File "C:\Users\Kartik\AppData\Local\Programs\Python\Python38-32\lib\site-packages\discord\ext\commands\core.py", line 88, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: ValueError: invalid literal for int() with base 10: "'2"
+
+[2020-03-24 22:27:50,442] INFO [root.on_command:83] BRANE GAAMEZ > Karthicccccccccccccccccccccccccc#0465 > sss lyrics humble kendrick
+[2020-03-24 22:28:09,866] ERROR [root.on_command_error:43] Ignoring exception in command lyrics:
+[2020-03-24 22:28:09,870] ERROR [root.on_command_error:44] 
+Traceback (most recent call last):
+  File "C:\Users\Kartik\AppData\Local\Programs\Python\Python38-32\lib\site-packages\discord\ext\commands\core.py", line 79, in wrapped
+    ret = await coro(*args, **kwargs)
+  File "C:\Users\Kartik\Desktop\Albedo\sexybot-root\cogs\music.py", line 404, in lyrics
+    bt = br_tags[item]
+IndexError: list index out of range
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Kartik\AppData\Local\Programs\Python\Python38-32\lib\site-packages\discord\ext\commands\bot.py", line 863, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\Kartik\AppData\Local\Programs\Python\Python38-32\lib\site-packages\discord\ext\commands\core.py", line 728, in invoke
+    await injected(*ctx.args, **ctx.kwargs)
+  File "C:\Users\Kartik\AppData\Local\Programs\Python\Python38-32\lib\site-packages\discord\ext\commands\core.py", line 88, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: IndexError: list index out of range
+
+[2020-03-24 22:29:10,232] INFO [discord.client.run:591] Received signal to terminate bot and event loop.
+[2020-03-24 22:29:10,236] INFO [discord.client.run:594] Cleaning up tasks.
+[2020-03-24 22:29:10,236] INFO [discord.client._cancel_tasks:73] Cleaning up after 4 tasks.
+[2020-03-24 22:29:10,396] INFO [discord.client._cleanup_loop:96] Closing the event loop.
+[2020-03-24 22:29:16,869] INFO [discord.client.login:399] logging in using static token
+[2020-03-24 22:29:18,712] INFO [discord.gateway.from_client:241] Created websocket connected to wss://gateway.discord.gg?encoding=json&v=6&compress=zlib-stream
+[2020-03-24 22:29:18,719] INFO [discord.gateway.identify:320] Shard ID None has sent the IDENTIFY payload.
+[2020-03-24 22:29:19,749] INFO [discord.gateway.received_message:410] Shard ID None has connected to Gateway: ["gateway-prd-main-mr10",{"micros":164796,"calls":["discord-sessions-prd-1-65",{"micros":163367,"calls":["start_session",{"micros":156992,"calls":["api-prd-main-112r",{"micros":150201,"calls":["get_user",{"micros":14062},"add_authorized_ip",{"micros":11368},"get_guilds",{"micros":14323},"coros_wait",{"micros":1}]}]},"guilds_connect",{"micros":4,"calls":[]},"presence_connect",{"micros":1,"calls":[]}]}]}] (Session ID: ce3d9c32226ee4eea5de8abfccab147a).
+[2020-03-24 22:29:21,777] INFO [root.on_ready:114] Logged in as Schezwan Sauce
+[2020-03-24 22:29:30,843] INFO [root.on_command:83] BRANE GAAMEZ > Karthicccccccccccccccccccccccccc#0465 > sss lyrics humble kendrick
+[2020-03-24 22:29:45,297] ERROR [root.on_command_error:43] Ignoring exception in command lyrics:
+[2020-03-24 22:29:45,301] ERROR [root.on_command_error:44] 
+Traceback (most recent call last):
+  File "C:\Users\Kartik\AppData\Local\Programs\Python\Python38-32\lib\site-packages\discord\ext\commands\core.py", line 79, in wrapped
+    ret = await coro(*args, **kwargs)
+  File "C:\Users\Kartik\Desktop\Albedo\sexybot-root\cogs\music.py", line 404, in lyrics
+    bt = br_tags[item]
+IndexError: list index out of range
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Kartik\AppData\Local\Programs\Python\Python38-32\lib\site-packages\discord\ext\commands\bot.py", line 863, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\Kartik\AppData\Local\Programs\Python\Python38-32\lib\site-packages\discord\ext\commands\core.py", line 728, in invoke
+    await injected(*ctx.args, **ctx.kwargs)
+  File "C:\Users\Kartik\AppData\Local\Programs\Python\Python38-32\lib\site-packages\discord\ext\commands\core.py", line 88, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: IndexError: list index out of range
+
+[2020-03-24 22:30:32,086] INFO [discord.client.run:591] Received signal to terminate bot and event loop.
+[2020-03-24 22:30:32,090] INFO [discord.client.run:594] Cleaning up tasks.
+[2020-03-24 22:30:32,090] INFO [discord.client._cancel_tasks:73] Cleaning up after 4 tasks.
+[2020-03-24 22:30:32,238] INFO [discord.client._cleanup_loop:96] Closing the event loop.
+[2020-03-24 22:30:42,809] INFO [discord.client.login:399] logging in using static token
+[2020-03-24 22:30:44,210] INFO [discord.gateway.from_client:241] Created websocket connected to wss://gateway.discord.gg?encoding=json&v=6&compress=zlib-stream
+[2020-03-24 22:30:44,216] INFO [discord.gateway.identify:320] Shard ID None has sent the IDENTIFY payload.
+[2020-03-24 22:30:44,607] INFO [discord.gateway.received_message:410] Shard ID None has connected to Gateway: ["gateway-prd-main-bft8",{"micros":49842,"calls":["discord-sessions-prd-1-68",{"micros":47589,"calls":["start_session",{"micros":43679,"calls":["api-prd-main-6hnk",{"micros":40431,"calls":["get_user",{"micros":3009},"add_authorized_ip",{"micros":1732},"get_guilds",{"micros":4215},"coros_wait",{"micros":2}]}]},"guilds_connect",{"micros":6,"calls":[]},"presence_connect",{"micros":1,"calls":[]}]}]}] (Session ID: c4029f1ebdee0cf89782183e80c47c16).
+[2020-03-24 22:30:46,624] INFO [root.on_ready:114] Logged in as Schezwan Sauce
+[2020-03-24 22:31:00,764] INFO [root.on_command:83] BRANE GAAMEZ > Karthicccccccccccccccccccccccccc#0465 > sss lyrics kendrick humble
+[2020-03-24 22:31:21,714] ERROR [root.on_command_error:43] Ignoring exception in command lyrics:
+[2020-03-24 22:31:21,718] ERROR [root.on_command_error:44] 
+Traceback (most recent call last):
+  File "C:\Users\Kartik\AppData\Local\Programs\Python\Python38-32\lib\site-packages\discord\ext\commands\core.py", line 79, in wrapped
+    ret = await coro(*args, **kwargs)
+  File "C:\Users\Kartik\Desktop\Albedo\sexybot-root\cogs\music.py", line 404, in lyrics
+    bt = br_tags[item]
+IndexError: list index out of range
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Kartik\AppData\Local\Programs\Python\Python38-32\lib\site-packages\discord\ext\commands\bot.py", line 863, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\Kartik\AppData\Local\Programs\Python\Python38-32\lib\site-packages\discord\ext\commands\core.py", line 728, in invoke
+    await injected(*ctx.args, **ctx.kwargs)
+  File "C:\Users\Kartik\AppData\Local\Programs\Python\Python38-32\lib\site-packages\discord\ext\commands\core.py", line 88, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: IndexError: list index out of range
+
+[2020-03-24 22:32:46,928] INFO [discord.client.run:591] Received signal to terminate bot and event loop.
+[2020-03-24 22:32:46,928] INFO [discord.client.run:594] Cleaning up tasks.
+[2020-03-24 22:32:46,932] INFO [discord.client._cancel_tasks:73] Cleaning up after 4 tasks.
+[2020-03-24 22:32:47,082] INFO [discord.client._cleanup_loop:96] Closing the event loop.
+[2020-03-24 22:32:54,005] INFO [discord.client.login:399] logging in using static token
+[2020-03-24 22:32:55,593] INFO [discord.gateway.from_client:241] Created websocket connected to wss://gateway.discord.gg?encoding=json&v=6&compress=zlib-stream
+[2020-03-24 22:32:55,597] INFO [discord.gateway.identify:320] Shard ID None has sent the IDENTIFY payload.
+[2020-03-24 22:32:56,007] INFO [discord.gateway.received_message:410] Shard ID None has connected to Gateway: ["gateway-prd-main-hqpf",{"micros":46745,"calls":["discord-sessions-prd-1-65",{"micros":44044,"calls":["start_session",{"micros":37898,"calls":["api-prd-main-x8gv",{"micros":33664,"calls":["get_user",{"micros":3286},"add_authorized_ip",{"micros":2266},"get_guilds",{"micros":2297},"coros_wait",{"micros":2}]}]},"guilds_connect",{"micros":3,"calls":[]},"presence_connect",{"micros":1,"calls":[]}]}]}] (Session ID: 8f733e1b3fbfc5cde3f0257e5a1cdaa9).
+[2020-03-24 22:32:58,021] INFO [root.on_ready:114] Logged in as Schezwan Sauce
+[2020-03-24 22:33:01,417] INFO [root.on_command:83] BRANE GAAMEZ > Karthicccccccccccccccccccccccccc#0465 > sss lyrics humble
+[2020-03-24 22:33:17,814] ERROR [root.on_command_error:43] Ignoring exception in command lyrics:
+[2020-03-24 22:33:17,818] ERROR [root.on_command_error:44] 
+Traceback (most recent call last):
+  File "C:\Users\Kartik\AppData\Local\Programs\Python\Python38-32\lib\site-packages\discord\ext\commands\core.py", line 79, in wrapped
+    ret = await coro(*args, **kwargs)
+  File "C:\Users\Kartik\Desktop\Albedo\sexybot-root\cogs\music.py", line 405, in lyrics
+    bt = br_tags[item]
+IndexError: list index out of range
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Kartik\AppData\Local\Programs\Python\Python38-32\lib\site-packages\discord\ext\commands\bot.py", line 863, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\Kartik\AppData\Local\Programs\Python\Python38-32\lib\site-packages\discord\ext\commands\core.py", line 728, in invoke
+    await injected(*ctx.args, **ctx.kwargs)
+  File "C:\Users\Kartik\AppData\Local\Programs\Python\Python38-32\lib\site-packages\discord\ext\commands\core.py", line 88, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: IndexError: list index out of range
+
+[2020-03-24 22:47:32,830] INFO [discord.client.run:591] Received signal to terminate bot and event loop.
+[2020-03-24 22:47:32,830] INFO [discord.client.run:594] Cleaning up tasks.
+[2020-03-24 22:47:32,834] INFO [discord.client._cancel_tasks:73] Cleaning up after 4 tasks.
+[2020-03-24 22:47:33,020] INFO [discord.client._cleanup_loop:96] Closing the event loop.
+[2020-03-24 22:47:40,614] INFO [discord.client.login:399] logging in using static token
+[2020-03-24 22:47:42,197] INFO [discord.gateway.from_client:241] Created websocket connected to wss://gateway.discord.gg?encoding=json&v=6&compress=zlib-stream
+[2020-03-24 22:47:42,203] INFO [discord.gateway.identify:320] Shard ID None has sent the IDENTIFY payload.
+[2020-03-24 22:47:42,637] INFO [discord.gateway.received_message:410] Shard ID None has connected to Gateway: ["gateway-prd-main-h3b3",{"micros":102548,"calls":["discord-sessions-prd-1-44",{"micros":100700,"calls":["start_session",{"micros":85935,"calls":["api-prd-main-zpt3",{"micros":81911,"calls":["get_user",{"micros":7042},"add_authorized_ip",{"micros":5881},"get_guilds",{"micros":2813},"coros_wait",{"micros":2}]}]},"guilds_connect",{"micros":5,"calls":[]},"presence_connect",{"micros":1,"calls":[]}]}]}] (Session ID: 728242984e64aa756e29574935a7431b).
+[2020-03-24 22:47:44,647] INFO [root.on_ready:114] Logged in as Albedo
+[2020-03-24 22:47:57,851] INFO [root.on_command:83] BRANE GAAMEZ > Karthicccccccccccccccccccccccccc#0465 > sss ping
+[2020-03-24 22:50:05,819] INFO [discord.client.run:591] Received signal to terminate bot and event loop.
+[2020-03-24 22:50:05,823] INFO [discord.client.run:594] Cleaning up tasks.
+[2020-03-24 22:50:05,823] INFO [discord.client._cancel_tasks:73] Cleaning up after 4 tasks.
+[2020-03-24 22:50:05,960] INFO [discord.client._cleanup_loop:96] Closing the event loop.
+[2020-03-24 22:50:11,880] INFO [discord.client.login:399] logging in using static token
+[2020-03-24 22:50:13,182] INFO [discord.gateway.from_client:241] Created websocket connected to wss://gateway.discord.gg?encoding=json&v=6&compress=zlib-stream
+[2020-03-24 22:50:13,184] INFO [discord.gateway.identify:320] Shard ID None has sent the IDENTIFY payload.
+[2020-03-24 22:50:13,609] INFO [discord.gateway.received_message:410] Shard ID None has connected to Gateway: ["gateway-prd-main-7r6k",{"micros":87171,"calls":["discord-sessions-prd-1-51",{"micros":84537,"calls":["start_session",{"micros":72686,"calls":["api-prd-main-gqgl",{"micros":62653,"calls":["get_user",{"micros":9061},"add_authorized_ip",{"micros":6046},"get_guilds",{"micros":3181},"coros_wait",{"micros":1}]}]},"guilds_connect",{"micros":5,"calls":[]},"presence_connect",{"micros":1,"calls":[]}]}]}] (Session ID: 3a5c001c94831e8ea572324bf0180757).
+[2020-03-24 22:50:15,606] INFO [root.on_ready:114] Logged in as Schezwan Sauce
+[2020-03-24 22:50:17,954] INFO [root.on_command:83] BRANE GAAMEZ > Karthicccccccccccccccccccccccccc#0465 > sss ping
+[2020-03-24 22:50:30,448] INFO [root.on_command:83] BRANE GAAMEZ > Karthicccccccccccccccccccccccccc#0465 > sss lyrics kendrick humble
+[2020-03-24 22:50:33,066] ERROR [root.on_command_error:43] Ignoring exception in command lyrics:
+[2020-03-24 22:50:33,070] ERROR [root.on_command_error:44] 
+Traceback (most recent call last):
+  File "C:\Users\Kartik\AppData\Local\Programs\Python\Python38-32\lib\site-packages\discord\ext\commands\core.py", line 79, in wrapped
+    ret = await coro(*args, **kwargs)
+  File "C:\Users\Kartik\Desktop\Albedo\sexybot-root\cogs\music.py", line 396, in lyrics
+    txt += f"**{i+1}**. {get_song(query, i).title}\n"
+  File "C:\Users\Kartik\Desktop\Albedo\sexybot-root\cogs\music.py", line 29, in get_song
+    str(response['response']['hits'][0]['result']['url'], str(response['response']['hits'][item]['result']['song_art_image_url'])))
+TypeError: decoding str is not supported
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Kartik\AppData\Local\Programs\Python\Python38-32\lib\site-packages\discord\ext\commands\bot.py", line 863, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\Kartik\AppData\Local\Programs\Python\Python38-32\lib\site-packages\discord\ext\commands\core.py", line 728, in invoke
+    await injected(*ctx.args, **ctx.kwargs)
+  File "C:\Users\Kartik\AppData\Local\Programs\Python\Python38-32\lib\site-packages\discord\ext\commands\core.py", line 88, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: TypeError: decoding str is not supported
+
+[2020-03-24 22:50:53,636] INFO [discord.client.run:591] Received signal to terminate bot and event loop.
+[2020-03-24 22:50:53,636] INFO [discord.client.run:594] Cleaning up tasks.
+[2020-03-24 22:50:53,636] INFO [discord.client._cancel_tasks:73] Cleaning up after 4 tasks.
+[2020-03-24 22:50:53,767] INFO [discord.client._cleanup_loop:96] Closing the event loop.
+[2020-03-24 22:51:00,251] INFO [discord.client.login:399] logging in using static token
+[2020-03-24 22:51:01,578] INFO [discord.gateway.from_client:241] Created websocket connected to wss://gateway.discord.gg?encoding=json&v=6&compress=zlib-stream
+[2020-03-24 22:51:01,582] INFO [discord.gateway.identify:320] Shard ID None has sent the IDENTIFY payload.
+[2020-03-24 22:51:01,981] INFO [discord.gateway.received_message:410] Shard ID None has connected to Gateway: ["gateway-prd-main-9bmr",{"micros":55239,"calls":["discord-sessions-prd-1-23",{"micros":49172,"calls":["start_session",{"micros":43070,"calls":["api-prd-main-j18s",{"micros":39121,"calls":["get_user",{"micros":4396},"add_authorized_ip",{"micros":2344},"get_guilds",{"micros":2139},"coros_wait",{"micros":2}]}]},"guilds_connect",{"micros":5,"calls":[]},"presence_connect",{"micros":2,"calls":[]}]}]}] (Session ID: c4a360fdf525b4612e31930dc8070d58).
+[2020-03-24 22:51:03,990] INFO [root.on_ready:114] Logged in as Schezwan Sauce
+[2020-03-24 22:51:05,519] INFO [root.on_command:83] BRANE GAAMEZ > Karthicccccccccccccccccccccccccc#0465 > sss lyrics kendrick humble
+[2020-03-24 22:51:21,841] ERROR [root.on_command_error:43] Ignoring exception in command lyrics:
+[2020-03-24 22:51:21,845] ERROR [root.on_command_error:44] 
+Traceback (most recent call last):
+  File "C:\Users\Kartik\AppData\Local\Programs\Python\Python38-32\lib\site-packages\discord\ext\commands\core.py", line 79, in wrapped
+    ret = await coro(*args, **kwargs)
+  File "C:\Users\Kartik\Desktop\Albedo\sexybot-root\cogs\music.py", line 422, in lyrics
+    return await safe_send(ctx, lyrics, song.title, song.image)
+TypeError: safe_send() takes 3 positional arguments but 4 were given
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Kartik\AppData\Local\Programs\Python\Python38-32\lib\site-packages\discord\ext\commands\bot.py", line 863, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\Kartik\AppData\Local\Programs\Python\Python38-32\lib\site-packages\discord\ext\commands\core.py", line 728, in invoke
+    await injected(*ctx.args, **ctx.kwargs)
+  File "C:\Users\Kartik\AppData\Local\Programs\Python\Python38-32\lib\site-packages\discord\ext\commands\core.py", line 88, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: TypeError: safe_send() takes 3 positional arguments but 4 were given
+
+[2020-03-24 22:51:44,235] INFO [discord.client.run:591] Received signal to terminate bot and event loop.
+[2020-03-24 22:51:44,235] INFO [discord.client.run:594] Cleaning up tasks.
+[2020-03-24 22:51:44,235] INFO [discord.client._cancel_tasks:73] Cleaning up after 4 tasks.
+[2020-03-24 22:51:44,371] INFO [discord.client._cleanup_loop:96] Closing the event loop.
+[2020-03-24 22:51:50,101] INFO [discord.client.login:399] logging in using static token
+[2020-03-24 22:51:51,505] INFO [discord.gateway.from_client:241] Created websocket connected to wss://gateway.discord.gg?encoding=json&v=6&compress=zlib-stream
+[2020-03-24 22:51:51,509] INFO [discord.gateway.identify:320] Shard ID None has sent the IDENTIFY payload.
+[2020-03-24 22:51:52,135] INFO [discord.gateway.received_message:410] Shard ID None has connected to Gateway: ["gateway-prd-main-tl6v",{"micros":67953,"calls":["discord-sessions-prd-1-12",{"micros":65433,"calls":["start_session",{"micros":62162,"calls":["api-prd-main-xbvq",{"micros":59201,"calls":["get_user",{"micros":9807},"add_authorized_ip",{"micros":1346},"get_guilds",{"micros":1675},"coros_wait",{"micros":2}]}]},"guilds_connect",{"micros":6,"calls":[]},"presence_connect",{"micros":1,"calls":[]}]}]}] (Session ID: 046d76b11cf6c12fe21a41391fb2280c).
+[2020-03-24 22:51:54,143] INFO [root.on_ready:114] Logged in as Schezwan Sauce
+[2020-03-24 22:51:55,500] INFO [root.on_command:83] BRANE GAAMEZ > Karthicccccccccccccccccccccccccc#0465 > sss lyrics humble
+[2020-03-24 22:53:05,946] INFO [root.on_command:83] BRANE GAAMEZ > Karthicccccccccccccccccccccccccc#0465 > sss rank
+[2020-03-24 22:53:41,721] INFO [discord.client.run:591] Received signal to terminate bot and event loop.
+[2020-03-24 22:53:41,721] INFO [discord.client.run:594] Cleaning up tasks.
+[2020-03-24 22:53:41,721] INFO [discord.client._cancel_tasks:73] Cleaning up after 4 tasks.
+[2020-03-24 22:53:41,903] INFO [discord.client._cleanup_loop:96] Closing the event loop.
+[2020-03-24 22:53:49,284] INFO [discord.client.login:399] logging in using static token
+[2020-03-24 22:53:53,599] INFO [discord.gateway.from_client:241] Created websocket connected to wss://gateway.discord.gg?encoding=json&v=6&compress=zlib-stream
+[2020-03-24 22:53:53,606] INFO [discord.gateway.identify:320] Shard ID None has sent the IDENTIFY payload.
+[2020-03-24 22:53:54,126] INFO [discord.gateway.received_message:410] Shard ID None has connected to Gateway: ["gateway-prd-main-mq21",{"micros":179605,"calls":["discord-sessions-prd-1-69",{"micros":176591,"calls":["start_session",{"micros":171853,"calls":["api-prd-main-1jzf",{"micros":169179,"calls":["get_user",{"micros":2858},"add_authorized_ip",{"micros":1662},"get_guilds",{"micros":143234},"coros_wait",{"micros":2}]}]},"guilds_connect",{"micros":7,"calls":[]},"presence_connect",{"micros":1,"calls":[]}]}]}] (Session ID: 59fc7f167c812abe842281d10739180b).
+[2020-03-24 22:53:56,152] INFO [root.on_ready:114] Logged in as Schezwan Sauce
+[2020-03-24 22:54:05,558] INFO [discord.client.run:591] Received signal to terminate bot and event loop.
+[2020-03-24 22:54:05,559] INFO [discord.client.run:594] Cleaning up tasks.
+[2020-03-24 22:54:05,560] INFO [discord.client._cancel_tasks:73] Cleaning up after 4 tasks.
+[2020-03-24 22:54:05,705] INFO [discord.client._cleanup_loop:96] Closing the event loop.
+[2020-03-24 22:54:12,427] INFO [discord.client.login:399] logging in using static token
+[2020-03-24 22:54:13,835] INFO [discord.gateway.from_client:241] Created websocket connected to wss://gateway.discord.gg?encoding=json&v=6&compress=zlib-stream
+[2020-03-24 22:54:13,840] INFO [discord.gateway.identify:320] Shard ID None has sent the IDENTIFY payload.
+[2020-03-24 22:54:14,279] INFO [discord.gateway.received_message:410] Shard ID None has connected to Gateway: ["gateway-prd-main-hqpf",{"micros":100714,"calls":["discord-sessions-prd-1-37",{"micros":98640,"calls":["start_session",{"micros":96325,"calls":["api-prd-main-bs16",{"micros":82088,"calls":["get_user",{"micros":9593},"add_authorized_ip",{"micros":3952},"get_guilds",{"micros":6198},"coros_wait",{"micros":1}]}]},"guilds_connect",{"micros":4,"calls":[]},"presence_connect",{"micros":1,"calls":[]}]}]}] (Session ID: 66d3f375e7a9467a96b93bdcb5917c6b).
+[2020-03-24 22:54:16,280] INFO [root.on_ready:114] Logged in as Schezwan Sauce
+[2020-03-24 22:54:18,471] INFO [root.on_command:83] BRANE GAAMEZ > Karthicccccccccccccccccccccccccc#0465 > sss rank
+[2020-03-24 22:55:14,512] INFO [root.on_command:83] BRANE GAAMEZ > Karthicccccccccccccccccccccccccc#0465 > sss c mode dark
+[2020-03-24 22:55:21,878] INFO [root.on_command:83] BRANE GAAMEZ > Karthicccccccccccccccccccccccccc#0465 > sss c mode light
+[2020-03-24 22:55:27,036] INFO [root.on_command:83] BRANE GAAMEZ > Karthicccccccccccccccccccccccccc#0465 > sss rank
+[2020-03-24 22:55:31,706] INFO [root.on_command:83] BRANE GAAMEZ > Karthicccccccccccccccccccccccccc#0465 > sss ping
+[2020-03-24 22:55:38,265] INFO [root.on_command:83] BRANE GAAMEZ > Karthicccccccccccccccccccccccccc#0465 > sss c help
+[2020-03-24 22:55:46,287] INFO [root.on_command:83] BRANE GAAMEZ > Karthicccccccccccccccccccccccccc#0465 > sss help c
+[2020-03-24 22:56:16,806] INFO [root.on_command:83] BRANE GAAMEZ > Karthicccccccccccccccccccccccccc#0465 > sss c banner https://cdn.discordapp.com/attachments/627457506259501067/692061541742280704/overlap.png
+[2020-03-24 22:56:22,992] INFO [root.on_command:83] BRANE GAAMEZ > Karthicccccccccccccccccccccccccc#0465 > sss rank
+[2020-03-24 22:57:02,422] INFO [root.on_command:83] BRANE GAAMEZ > Karthicccccccccccccccccccccccccc#0465 > sss av @R. Danny
+[2020-03-24 22:57:13,850] INFO [root.on_command:83] BRANE GAAMEZ > Karthicccccccccccccccccccccccccc#0465 > sss av @R. Danny
+[2020-03-24 22:57:26,568] INFO [root.on_command:83] BRANE GAAMEZ > Karthicccccccccccccccccccccccccc#0465 > sss c banner https://cdn.discordapp.com/avatars/80528701850124288/1d89840ad386ee98aa5070315f018b3a.webp?size=1024
+[2020-03-24 22:57:30,560] INFO [root.on_command:83] BRANE GAAMEZ > Karthicccccccccccccccccccccccccc#0465 > sss rank
+[2020-03-24 23:01:15,621] INFO [root.on_command:83] BRANE GAAMEZ > Karthicccccccccccccccccccccccccc#0465 > sss rank
+[2020-03-24 23:02:36,885] INFO [root.on_command:83] BRANE GAAMEZ > Karthicccccccccccccccccccccccccc#0465 > sss lyrics humble
+[2020-03-24 23:03:20,858] INFO [discord.client.run:591] Received signal to terminate bot and event loop.
+[2020-03-24 23:03:20,860] INFO [discord.client.run:594] Cleaning up tasks.
+[2020-03-24 23:03:20,861] INFO [discord.client._cancel_tasks:73] Cleaning up after 4 tasks.
+[2020-03-24 23:03:21,028] INFO [discord.client._cleanup_loop:96] Closing the event loop.
+[2020-03-24 23:03:29,722] INFO [discord.client.login:399] logging in using static token
+[2020-03-24 23:03:31,043] INFO [discord.gateway.from_client:241] Created websocket connected to wss://gateway.discord.gg?encoding=json&v=6&compress=zlib-stream
+[2020-03-24 23:03:31,048] INFO [discord.gateway.identify:320] Shard ID None has sent the IDENTIFY payload.
+[2020-03-24 23:03:31,433] INFO [discord.gateway.received_message:410] Shard ID None has connected to Gateway: ["gateway-prd-main-znnz",{"micros":54388,"calls":["discord-sessions-prd-1-6",{"micros":52669,"calls":["start_session",{"micros":50451,"calls":["api-prd-main-h9s8",{"micros":47230,"calls":["get_user",{"micros":5500},"add_authorized_ip",{"micros":1864},"get_guilds",{"micros":2255},"coros_wait",{"micros":1}]}]},"guilds_connect",{"micros":4,"calls":[]},"presence_connect",{"micros":1,"calls":[]}]}]}] (Session ID: 3b24343a69478955f017cb3f99d11134).
+[2020-03-24 23:03:33,447] INFO [root.on_ready:114] Logged in as Schezwan Sauce
+[2020-03-24 23:03:35,533] INFO [root.on_command:83] BRANE GAAMEZ > Karthicccccccccccccccccccccccccc#0465 > sss lyrics humble
+[2020-03-24 23:05:01,100] INFO [root.on_command:83] BRANE GAAMEZ > Karthicccccccccccccccccccccccccc#0465 > sss lyrics 145 poodles
+[2020-03-24 23:08:59,226] INFO [root.on_command:83] BRANE GAAMEZ > Karthicccccccccccccccccccccccccc#0465 > sss lyrics 145 poodles jake chudnow
+[2020-03-24 23:09:12,879] ERROR [root.on_command_error:43] Ignoring exception in command lyrics:
+[2020-03-24 23:09:12,882] ERROR [root.on_command_error:44] 
+Traceback (most recent call last):
+  File "C:\Users\Kartik\AppData\Local\Programs\Python\Python38-32\lib\site-packages\discord\ext\commands\core.py", line 79, in wrapped
+    ret = await coro(*args, **kwargs)
+  File "C:\Users\Kartik\Desktop\Albedo\sexybot-root\cogs\music.py", line 422, in lyrics
+    return await safe_send(ctx, lyrics, song.title, song.image)
+  File "C:\Users\Kartik\Desktop\Albedo\sexybot-root\my_utils\default.py", line 173, in safe_send
+    await splitter(txt)
+  File "C:\Users\Kartik\Desktop\Albedo\sexybot-root\my_utils\default.py", line 161, in splitter
+    txt2 = txt2[:2000].rsplit(' ', 1)[1] + txt2[2000:]
+IndexError: list index out of range
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Kartik\AppData\Local\Programs\Python\Python38-32\lib\site-packages\discord\ext\commands\bot.py", line 863, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\Kartik\AppData\Local\Programs\Python\Python38-32\lib\site-packages\discord\ext\commands\core.py", line 728, in invoke
+    await injected(*ctx.args, **ctx.kwargs)
+  File "C:\Users\Kartik\AppData\Local\Programs\Python\Python38-32\lib\site-packages\discord\ext\commands\core.py", line 88, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: IndexError: list index out of range
+
+[2020-03-25 17:59:15,897] INFO [discord.client.login:399] logging in using static token
+[2020-03-25 17:59:16,690] WARNING [discord.http.request:192] We are being rate limited. Retrying in 0.55 seconds. Handled under the bucket "GET:None:None:/users/@me"
+[2020-03-25 17:59:16,692] WARNING [discord.http.request:197] Global rate limit has been hit. Retrying in 0.55 seconds.
+[2020-03-25 17:59:17,562] WARNING [discord.http.request:192] We are being rate limited. Retrying in 0.69 seconds. Handled under the bucket "GET:None:None:/users/@me"
+[2020-03-25 17:59:17,563] WARNING [discord.http.request:197] Global rate limit has been hit. Retrying in 0.69 seconds.
+[2020-03-25 17:59:18,579] WARNING [discord.http.request:192] We are being rate limited. Retrying in 0.67 seconds. Handled under the bucket "GET:None:None:/users/@me"
+[2020-03-25 17:59:18,582] WARNING [discord.http.request:197] Global rate limit has been hit. Retrying in 0.67 seconds.
+[2020-03-25 17:59:19,598] WARNING [discord.http.request:192] We are being rate limited. Retrying in 0.67 seconds. Handled under the bucket "GET:None:None:/users/@me"
+[2020-03-25 17:59:19,599] WARNING [discord.http.request:197] Global rate limit has been hit. Retrying in 0.67 seconds.
+[2020-03-25 17:59:20,595] WARNING [discord.http.request:192] We are being rate limited. Retrying in 0.67 seconds. Handled under the bucket "GET:None:None:/users/@me"
+[2020-03-25 17:59:20,596] WARNING [discord.http.request:197] Global rate limit has been hit. Retrying in 0.67 seconds.
+[2020-03-25 17:59:21,278] INFO [discord.client.run:594] Cleaning up tasks.
+[2020-03-25 17:59:21,279] INFO [discord.client._cleanup_loop:96] Closing the event loop.
+[2020-03-25 18:02:44,180] INFO [discord.client.login:399] logging in using static token
+[2020-03-25 18:02:44,637] WARNING [discord.http.request:192] We are being rate limited. Retrying in 0.54 seconds. Handled under the bucket "GET:None:None:/users/@me"
+[2020-03-25 18:02:44,638] WARNING [discord.http.request:197] Global rate limit has been hit. Retrying in 0.54 seconds.
+[2020-03-25 18:02:45,510] WARNING [discord.http.request:192] We are being rate limited. Retrying in 0.67 seconds. Handled under the bucket "GET:None:None:/users/@me"
+[2020-03-25 18:02:45,511] WARNING [discord.http.request:197] Global rate limit has been hit. Retrying in 0.67 seconds.
+[2020-03-25 18:02:46,564] INFO [discord.client.run:594] Cleaning up tasks.
+[2020-03-25 18:02:46,566] INFO [discord.client._cleanup_loop:96] Closing the event loop.
+[2020-03-25 18:07:50,133] INFO [discord.client.login:399] logging in using static token
+[2020-03-25 18:07:51,420] INFO [discord.gateway.from_client:241] Created websocket connected to wss://gateway.discord.gg?encoding=json&v=6&compress=zlib-stream
+[2020-03-25 18:07:51,439] INFO [discord.gateway.identify:320] Shard ID None has sent the IDENTIFY payload.
+[2020-03-25 18:07:51,826] INFO [discord.gateway.received_message:410] Shard ID None has connected to Gateway: ["gateway-prd-main-61c7",{"micros":56765,"calls":["discord-sessions-prd-1-31",{"micros":54901,"calls":["start_session",{"micros":49909,"calls":["api-prd-main-4c6z",{"micros":47248,"calls":["get_user",{"micros":7807},"add_authorized_ip",{"micros":1618},"get_guilds",{"micros":5045},"coros_wait",{"micros":1}]}]},"guilds_connect",{"micros":6,"calls":[]},"presence_connect",{"micros":512,"calls":[]}]}]}] (Session ID: b8dfc08a26eaad15c014447bf7a01023).
+[2020-03-25 18:07:53,833] INFO [root.on_ready:114] Logged in as Schezwan Sauce
+[2020-03-25 18:08:01,676] INFO [root.on_command:83] BRANE GAAMEZ > Karthicccccccccccccccccccccccccc#0465 > sss rank
+[2020-03-25 18:08:21,759] INFO [root.on_command:83] BRANE GAAMEZ > Karthicccccccccccccccccccccccccc#0465 > sss lyrics shape of you
+[2020-03-25 18:20:09,888] INFO [root.on_command:83] BRANE GAAMEZ > Karthicccccccccccccccccccccccccc#0465 > sss rank
+[2020-03-25 18:20:18,635] INFO [root.on_command:83] BRANE GAAMEZ > jatinsuteri#7969 > sss rank
+[2020-03-25 18:20:59,127] INFO [root.on_command:83] BRANE GAAMEZ > Karthicccccccccccccccccccccccccc#0465 > sss c show @The Cooler Daniel
+[2020-03-25 18:21:06,317] INFO [root.on_command:83] BRANE GAAMEZ > Karthicccccccccccccccccccccccccc#0465 > sss show @The Cooler Daniel
+[2020-03-25 18:21:17,937] INFO [root.on_command:83] BRANE GAAMEZ > Karthicccccccccccccccccccccccccc#0465 > sss c banner http://getwallpapers.com/wallpaper/full/c/d/8/861425-anime-background-1920x1080-for-iphone-6.jpg
+[2020-03-25 18:21:22,178] INFO [root.on_command:83] BRANE GAAMEZ > Karthicccccccccccccccccccccccccc#0465 > sss rank
+[2020-03-25 18:34:04,672] INFO [root.on_command:83] BRANE GAAMEZ > Karthicccccccccccccccccccccccccc#0465 > sss lyrics 145 poodles jake chudnow
+[2020-03-25 18:34:17,291] ERROR [root.on_command_error:43] Ignoring exception in command lyrics:
+[2020-03-25 18:34:17,295] ERROR [root.on_command_error:44] 
+Traceback (most recent call last):
+  File "C:\Users\Kartik\AppData\Local\Programs\Python\Python38-32\lib\site-packages\discord\ext\commands\core.py", line 79, in wrapped
+    ret = await coro(*args, **kwargs)
+  File "C:\Users\Kartik\Desktop\Albedo\sexybot-root\cogs\music.py", line 422, in lyrics
+    return await safe_send(ctx, lyrics, song.title, song.image)
+  File "C:\Users\Kartik\Desktop\Albedo\sexybot-root\my_utils\default.py", line 173, in safe_send
+    await splitter(txt)
+  File "C:\Users\Kartik\Desktop\Albedo\sexybot-root\my_utils\default.py", line 161, in splitter
+    txt2 = txt2[:2000].rsplit(' ', 1)[1] + txt2[2000:]
+IndexError: list index out of range
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Kartik\AppData\Local\Programs\Python\Python38-32\lib\site-packages\discord\ext\commands\bot.py", line 863, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\Kartik\AppData\Local\Programs\Python\Python38-32\lib\site-packages\discord\ext\commands\core.py", line 728, in invoke
+    await injected(*ctx.args, **ctx.kwargs)
+  File "C:\Users\Kartik\AppData\Local\Programs\Python\Python38-32\lib\site-packages\discord\ext\commands\core.py", line 88, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: IndexError: list index out of range
+
+[2020-03-25 18:35:33,165] INFO [discord.client.run:591] Received signal to terminate bot and event loop.
+[2020-03-25 18:35:33,166] INFO [discord.client.run:594] Cleaning up tasks.
+[2020-03-25 18:35:33,168] INFO [discord.client._cancel_tasks:73] Cleaning up after 4 tasks.
+[2020-03-25 18:35:33,391] INFO [discord.client._cleanup_loop:96] Closing the event loop.

@@ -1,0 +1,11 @@
+discord
+os
+discord.ext
+discord.utils
+io
+json
+re
+random
+requests
+PIL
+youtube_dl
